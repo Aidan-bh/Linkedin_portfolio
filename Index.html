@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aidan Hewitt — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Cursor -->
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Corner HUD decorations -->
+  <div class="hud-corner hud-tl" aria-hidden="true"></div>
+  <div class="hud-corner hud-tr" aria-hidden="true"></div>
+  <div class="hud-corner hud-bl" aria-hidden="true"></div>
+  <div class="hud-corner hud-br" aria-hidden="true"></div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AH<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"><span class="nav-idx">01.</span>About</a></li>
+      <li><a href="#skills"><span class="nav-idx">02.</span>Skills</a></li>
+      <li><a href="#projects"><span class="nav-idx">03.</span>Projects</a></li>
+      <li><a href="#education"><span class="nav-idx">04.</span>Education</a></li>
+      <li><a href="#contact"><span class="nav-idx">05.</span>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="home">
+    <!-- Animated grid -->
+    <div class="cyber-grid" aria-hidden="true"></div>
+
+    <!-- Floating data particles -->
+    <div class="particles" aria-hidden="true" id="particles"></div>
+
+    <div class="hero-hud" aria-hidden="true">
+      <span class="hud-text">SYS_READY</span>
+      <span class="hud-bar"></span>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-system">// PORTFOLIO_v2.5 — INITIALISING...</p>
+
+      <h1 class="hero-name">
+        <span class="glitch" data-text="AIDAN">AIDAN</span>
+        <span class="glitch hero-name-2" data-text="HEWITT">HEWITT</span>
+      </h1>
+
+      <div class="hero-title-wrap">
+        <span class="title-line"></span>
+        <p class="hero-title" id="typedTitle"></p>
+        <span class="cursor-blink">_</span>
+      </div>
+
+      <p class="hero-desc">
+        First-class CS graduate · Data Analyst · AI/ML engineer · Full-stack developer<br/>
+        Building scalable projects from London, UK.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn-cyber">
+          <span class="btn-cyber-inner">VIEW_PROJECTS</span>
+          <span class="btn-cyber-glow"></span>
+        </a>
+        <a href="#contact" class="btn-cyber btn-cyber-outline">
+          <span class="btn-cyber-inner">INITIATE_CONTACT</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat"><span class="hstat-n">1ST</span><span class="hstat-l">Class Honours</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Deployed Projects</span></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Languages</span></div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-label">SCROLL</span>
+      <div class="scroll-line-wrap"><div class="scroll-line-inner"></div></div>
+    </div>
+  </header>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal reveal-left">
+        <span class="section-tag">// 01_ABOUT.exe</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-col reveal reveal-left">
+          <div class="photo-frame">
+            <div class="photo-inner">
+              <img src="photo.jpg" alt="Aidan Hewitt" class="profile-photo" />
+            </div>
+            <div class="photo-hud-line photo-hud-t"></div>
+            <div class="photo-hud-line photo-hud-b"></div>
+            <div class="photo-label">ID_VERIFIED ✓</div>
+          </div>
+        </div>
+
+        <div class="about-text-col reveal reveal-right">
+          <h2 class="cyber-heading">Turning complex<br/><em>problems into</em><br/>efficent systems.</h2>
+
+          <p class="about-p">
+            <strong>Bcs accredited Computer Science graduate</strong> and digital platforms professional with experience in system 
+            support, operational reporting, data insights, and stakeholder-facing technology delivery.
+            Currently focused on developing deeper technical expertise in data engineering, analytics 
+            automation, and scalable software systems, with a strong interest in building reliable data 
+            solutions that turn operational data into meaningful business insight.
+          </p>
+          <p class="about-p">
+            My dissertation — a <strong>multilingual cybersecurity awareness application</strong> — was
+            recognised by the university and selected for a research paper publication. Currently
+            working as an HSEQ Analyst at ISS Facility Services while actively pursuing
+            data and software engineering roles.
+          </p>
+          <p class="about-p">
+            Outside of tech: Men's First Team field hockey at <strong>Upminster Hockey Club</strong>
+            and competitive e-sports team management at university level.
+          </p>
+
+          <a href="AidanHewitt_CV.pdf" class="btn-cyber" download style="margin-top: 8px; display: inline-flex;">
+              <span class="btn-cyber-inner">DOWNLOAD_CV.pdf</span>
+              <span class="btn-cyber-glow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal reveal-left">
+        <span class="section-tag">// 02_SKILLS.sys</span>
+        <div class="section-line"></div>
+      </div>
+      <h2 class="cyber-heading reveal">Tech <em>stack</em> &amp; skills.</h2>
+
+      <div class="skills-block skills-languages reveal reveal-up">
+        <div class="skill-group-label">[ LANGUAGES ]</div>
+        <div class="skill-pills">
+          <span class="pill pill-hot">Python</span>
+          <span class="pill pill-hot">JavaScript</span>
+          <span class="pill pill-hot">Java</span>
+          <span class="pill pill-hot">Dart</span>
+          <span class="pill pill-hot">SQL</span>
+          <span class="pill pill-hot">HTML5</span>
+          <span class="pill pill-hot">CSS3</span>
+        </div>
+      </div>
+
+      <div class="skills-block skills-frameworks reveal reveal-up">
+        <div class="skill-group-label">[ FRAMEWORKS &amp; LIBRARIES ]</div>
+        <div class="skill-pills">
+          <span class="pill">React</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">Flutter</span>
+          <span class="pill">TensorFlow</span>
+          <span class="pill">Express</span>
+        </div>
+      </div>
+
+      <div class="skills-block skills-tools reveal reveal-up">
+        <div class="skill-group-label">[ TOOLS &amp; PLATFORMS ]</div>
+        <div class="skill-pills">
+          <span class="pill">Git / GitHub</span>
+          <span class="pill">Docker</span>
+          <span class="pill">Firebase</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Linux</span>
+          <span class="pill">Cisco</span>
+          <span class="pill">Algorand Blockchain</span>
+          <span class="pill">SharePoint</span>
+        </div>
+      </div>
+
+      <div class="skills-block skills-expertise reveal reveal-up">
+        <div class="skill-group-label">[ EXPERTISE ]</div>
+        <div class="skill-pills">
+          <span class="pill pill-pink">Full-stack Development</span>
+          <span class="pill pill-pink">AI / ML Engineering</span>
+          <span class="pill pill-pink">Network Security</span>
+          <span class="pill pill-pink">Cloud Deployment</span>
+          <span class="pill pill-pink">API Integration</span>
+          <span class="pill pill-pink">KPI Analytics</span>
+          <span class="pill pill-pink">Mobile Development</span>
+          <span class="pill pill-pink">Blockchain / Smart Contracts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal reveal-left">
+        <span class="section-tag">// 03_PROJECTS.log</span>
+        <div class="section-line"></div>
+      </div>
+      <h2 class="cyber-heading reveal">My <em>Projects.</em></h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal reveal-zoom">
+          <div class="project-card-top">
+            <span class="project-num">P_001</span>
+            <span class="project-status">PUBLISHED</span>
+          </div>
+          <h3 class="project-name">Multilingual Cybersecurity<br/>Awareness App</h3>
+          <p class="project-tech">Flutter · HTML · Cross-platform</p>
+          <p class="project-desc">Accessible cross-platform app promoting cybersecurity awareness across multiple languages. Recognised by the university and selected for a <strong>research paper publication</strong>.</p>
+          <div class="project-links">
+            <a href="#" class="plink" target="_blank" rel="noopener">DEMO ↗</a>
+            <a href="#" class="plink plink-ghost" target="_blank" rel="noopener">GITHUB →</a>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+        <article class="project-card reveal reveal-zoom">
+          <div class="project-card-top">
+            <span class="project-num">P_002</span>
+            <span class="project-status">DEPLOYED</span>
+          </div>
+          <h3 class="project-name">Sports Venue Booking<br/>DApp</h3>
+          <p class="project-tech">Flutter · Algorand Blockchain · Smart Contracts</p>
+          <p class="project-desc">Extended an open-source Algorand blockchain DApp with custom smart contracts and a Flutter UI. Improved user flow and reduced transaction latency by <strong>~20%</strong>.</p>
+          <div class="project-links">
+            <a href="#" class="plink" target="_blank" rel="noopener">DEMO ↗</a>
+            <a href="#" class="plink plink-ghost" target="_blank" rel="noopener">GITHUB →</a>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+        <article class="project-card reveal reveal-zoom">
+          <div class="project-card-top">
+            <span class="project-num">P_003</span>
+            <span class="project-status">TRAINED</span>
+          </div>
+          <h3 class="project-name">CIFAR-10 Image<br/>Classification CNN</h3>
+          <p class="project-tech">Python · TensorFlow · Deep Learning</p>
+          <p class="project-desc">Designed and trained a Convolutional Neural Network achieving <strong>80%+ accuracy</strong> on CIFAR-10. Applied data augmentation, normalisation, and dropout techniques.</p>
+          <div class="project-links">
+            <a href="#" class="plink" target="_blank" rel="noopener">DEMO ↗</a>
+            <a href="#" class="plink plink-ghost" target="_blank" rel="noopener">GITHUB →</a>
+          </div>
+          <div class="project-card-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header reveal reveal-left">
+        <span class="section-tag">// 04_EDUCATION.edu</span>
+        <div class="section-line"></div>
+      </div>
+      <h2 class="cyber-heading reveal">Academic <em>foundation.</em></h2>
+
+      <div class="edu-block reveal reveal-zoom">
+        <div class="edu-card">
+          <div class="edu-badge">1ST</div>
+          <div class="edu-info">
+            <h3 class="edu-degree">BSc (Hons) Computer Science — First-Class Honours</h3>
+            <p class="edu-uni">University of East London · Graduated September 2025</p>
+            <p class="edu-modules">Artificial Intelligence · Web Development · Data Structures &amp; Algorithms · Mobile &amp; Distributed Systems · Computer &amp; Network Security</p>
+            <p class="edu-diss">Dissertation: <em>Multilingual Cyber Security Awareness Application (Flutter)</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal reveal-left">
+        <span class="section-tag">// 05_CONTACT.init</span>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-left reveal reveal-left">
+          <h2 class="cyber-heading">Let's build<br/><em>something</em><br/>together.</h2>
+          <p class="contact-sub">Open to software engineering roles, freelance projects, and collaborations. My inbox is always open.</p>
+        </div>
+        <div class="contact-right reveal reveal-right">
+          <a href="mailto:Aidanbhewitt@outlook.com" class="contact-link-row">
+            <span class="clr-icon">@</span>
+            <span class="clr-label">EMAIL</span>
+            <span class="clr-value">Aidanbhewitt@outlook.com</span>
+            <span class="clr-arrow">↗</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aidan-hewitt-779092363/" target="_blank" rel="noopener" class="contact-link-row">
+            <span class="clr-icon">in</span>
+            <span class="clr-label">LINKEDIN</span>
+            <span class="clr-value">aidanhewitt-779092363/</span>
+            <span class="clr-arrow">↗</span>
+          </a>
+          <a href="https://github.com/Aidan-bh" target="_blank" rel="noopener" class="contact-link-row">
+            <span class="clr-icon">GH</span>
+            <span class="clr-label">GITHUB</span>
+            <span class="clr-value">github.com/Aidan-bh</span>
+            <span class="clr-arrow">↗</span>
+          </a>
+          <a href="mailto:Aidanbhewitt@outlook.com" class="btn-cyber" style="margin-top: 32px; display: inline-flex;">
+            <span class="btn-cyber-inner">SEND_MESSAGE ↗</span>
+            <span class="btn-cyber-glow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">&lt;AH/&gt;</span>
+      <span class="footer-copy">// AIDAN HEWITT · <span id="year"></span> · ALL SYSTEMS GO</span>
+      <a href="#home" class="footer-top">[ TOP ↑ ]</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
